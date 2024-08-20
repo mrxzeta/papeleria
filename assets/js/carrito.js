@@ -140,4 +140,3 @@ class Carrito {
       document.getElementById('total').textContent = `Total: ${total.toFixed(2)}`;
     }
   }
-  
