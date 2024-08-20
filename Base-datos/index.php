@@ -46,6 +46,7 @@ if(isset($_POST["btningresar"])){
                 <button type="submit" name="btningresar">Iniciar sesión</button>
             </form>
             <?php if(isset($error)){ echo "<p style='color: red;'>$error</p>"; } ?>
+            <p>¿No eres un usuario? <a href="./registro.php">Regístrate aquí</a></p>
         </div>
     </div>
 </body>
