@@ -32,11 +32,6 @@ if(isset($_POST["btningresar"])){
 </head>
 <body>
     <div class="container">
-        <video autoplay loop muted id="video-background">
-            <source src="/assets/img/videologin.mp4" type="video/mp4">
-            Tu navegador no soporta formato de video,<br>
-            Te recomendamos tener un navegador mas actual para disfrutar la experiencia completa.
-        </video>
         <div class="content"><a href="../index.html">
             <h1>Papeleria</h1></a>
         </div>
