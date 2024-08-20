@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelCraft</title>
+    <!-- Icono -->
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <!-- JSWipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Meta identificacion de la página -->
+    <meta name="page-identity" content="home">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home_style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Referencia a la animaciones dentro del html-->
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/1e6ab72603.js" crossorigin="anonymous"></script>
+    <!-- SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- --------- HERO ---------- -->
+    <header data-parallax="scroll" data-image-src="img/home/img-fondo.jpg" data-speed="0.2">
+        <div class="menu" data-aos="fade-down" data-aos-duration="800">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/Título-completo}_.svg" alt="Page logo">                   
+                </a>
+            </div>
+            <nav id="menuContainer">           
+                <label id="menu-toggle" class="hamburger menu-toggle">
+                    <input type="checkbox">
+                    <svg viewbox= "0 0 32 32">
+                        <path class="line line-top-bottom"
+                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                        </path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+                <ul class="list-nav">
+                    <li class="nav-item activeMenu"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a href="journey.html">Paquetes</a></li>
+                    <li class="nav-item"><a href="contact.html">Contactanos</a></li>
+                    <li class="nav-button"><a href="./php/login.php"><span>¿Administrador?</span> | <img src="img/icons/mapa.svg"
+                                alt=""></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="headerContent">
+            <h2 class="heroSubtitle" data-aos="fade-right" data-aos-duration="800">Creando lo que tu mente </h2>
+            <h1 class="heroTitle" data-aos="fade-right" data-aos-duration="800">Imagina <span></span></h1>
+            <div class="heroButton" data-aos="fade-up" data-aos-duration="1000">
+                <a href="journey.html" class="heroBtn">Trabaja con PixelCraft ahora.</a>
+                <a href="journey.html"><i class="fa-solid fa-play"></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- --------------- Porque contratarnos ----------- -->
+    <section class="whyHorizon">
+        <div class="whyHorizonTitle">
+            <h3 class="sectionSubtitle">¿Porque contratar los servios de </h3>
+            <h2 class="sectionTitle">PixelCraft?</h2>
+        </div>
+        <div class="whyHorizonCaracteristicas">
+            <div class="caracteristica">
+                <div class="icono"></div>
+                <h4>Trato perzonalizado</h4>
+                <p>El trato es personalizado con cada cliente que contactamos.</p>
+            </div>
+            <div class="caracteristica">
+                <div class="icono"></div>
+                <h4>Conocimiento Profesional</h4>
+                <p>Nuestro equipo se encuentra conformado por especialistas en el area.</p>
+            </div>
+        </div>
+        <div class="whyHorizonImages">
+            <div class="imagePrincipal">
+                <div class="imageSecundaria"></div>
+            </div>
+            <div class="imagePrincipal p2"></div>
+        </div>
+        <div class="whyHorizonContent">
+            <h3>Buscar una agencia de marketing digital se ha vuelto una auténtica pesadilla,
+            </h3>
+            <p class="firstChild">
+                existen innumerables opciones de agencias de todos tamaños, pero si lo analizas,
+                todas dicen, hacen y te prometen lo mismo.
+            </p>
+            <p>
+                Hoy las empresas lo que necesitan son asesores y aliados que se tomen el tiempo
+                necesario para escuchar sus problemas y que les ayuden a alcanzar sus metas, eso es Telaio,
+                tu asesor digital que guiará a tu negocio por el camino adecuado hasta lograr tus objetivos,
+                a como dé lugar.
+            </p>
+        </div>
+    </section>
+    <!-- --------------- TOP JOURNEYS ----------- -->
+    <section class="topJourneys">
+        <div class="topJourneysContent">
+            <h3 class="sectionSubtitle">Selecciona el paquete que se adapte a tus</h3>
+            <h2 class="sectionTitle">Preferencias</h2>
+            <p class="firstChild">
+                En PixelCraft contamos con 4 paquetes disponibles los cuales tienen diferente oferta de servicios que
+                realizamos.
+            </p>
+            <p>
+                Revisa los paquete y contactanos, de inmediato un operador se pondra en contacto contigo.
+            </p>
+        </div>
+        <div class="swiper topJourneysSwiper">
+            <button id="nexSlide"><i class="fas fa-arrow-right"></i></button>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="journey.html#barcelona" id="topTrip-barcelona">
+                        <img src="img/home/Paqueteestandar.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="journey.html#london" id="topTrip-london">
+                        <img src="img/home/Paquetebasico.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="journey.html#paris" id="topTrip-paris">
+                        <img src="img/home/Paqueteperz.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="journey.html#malaga" id="topTrip-malaga">
+                        <img src="img/home/Paquetepremium.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <!-- --------------- ABOUT HORIZON ------------ -->
+    <section class="aboutHorizon">
+        <div class="aboutHorizonGallery">
+            <div class="photo">
+                <div class="img"></div>
+            </div>
+            <div class="photo">
+                <div class="img"></div>
+            </div>
+            <div class="photo">
+                <div class="img"></div>
+            </div>
+            <div class="photo">
+                <div class="img"></div>
+            </div>
+        </div>
+        <div class="aboutHorizonContent">
+            <h3 class="sectionSubtitle">Conocenos</h3>
+            <h2 class="sectionTitle">Acerca de Pixel</h2>
+            <p>
+                PixelCraft es una pequeña empresa especilizada en el area
+                de marketing y branding digital para pequeñas empresas dentro
+                de la region poblana de chilchotla.
+            </p>
+            <p>
+                Estamos preparados para darte el mejor trato,
+                deja en en las manos de PixelCraft tu trabajo de marketing y todo estara bien.
+            </p>
+
+        </div>
+    </section>
+    <!-- --------------- RESUME BANNER ------------- -->
+    <section class="resumeBanner" data-parallax="scroll" data-image-src="img/home/proceso.jpg" data-speed="0.3">
+        <div class="resumeItem">
+            <h3>4</h3>
+            <h2>Paquetes</h2>
+        </div>
+        <div class="resumeItem">
+            <h3>100</h3>
+            <h2>Clientes trabajando juntos</h2>
+        </div>
+        <div class="resumeItem">
+            <h3>1</h3>
+            <h4>Objetivo</h4>
+            <h4>Crecer</h4>
+
+        </div>
+    </section>
+    <!-- --------------- Como podemos ayudarte --------------- -->
+    <section class="ourHistory">
+        <div class="ourHistoryContent">
+            <h3 class="sectionSubtitle">    ¿Como PixelCraft puede </h3>
+            <h2 class="sectionTitle">Ayudar a tu empresa?</h2>
+           
+                <p class="sub-title">1. Desarrollar e implementar estrategias de marketing efectivas</p>
+ <p>
+                Las agencias cuentan con equipos de expertos que pueden analizar tu negocio,
+                 tu público objetivo y la competencia para crear una estrategia de marketing 
+                 personalizada que te ayude a alcanzar tus objetivos.
+            </p>
+            
+                <p class="sub-title">2. Ahorrar tiempo y dinero</p>
+<p>
+Subcontratar tus actividades de marketing a una agencia puede ayudarte a ahorrar tiempo y dinero,
+ ya que no tendrás que invertir en la contratación y capacitación de personal interno
+            </p>
+            
+                <p class="sub-title">3. Medir el rendimiento de tus campañas de marketing</p>
+<p>
+Las agencias utilizan herramientas de análisis para rastrear el rendimiento de tus campañas de marketing y así poder optimizarlas y mejorar los resultados con el tiempo.
+            </p>
+        </div>
+        <div class="ourHistoryImage" data-parallax="scroll" data-image-src="img/home/como.jpg"></div>
+    </section>
+    <!-- --------------- Proceso de negocio --------- -->
+
+
+
+  
+
+<h1 class="features-title">Conoce nuestro proceso</h1>
+    <section class="features" data-parallax="scroll" data-image-src="img/home/banner3.jpg" data-speed="0.3">
+        
+
+
+        <div class="feature">
+            
+
+            <div class="icono"></div>
+            <h2>Visualiza</h2>
+            <p>
+                Visualiza los paquetes disponibles,
+                cuando tengas el paquete que mas se adapte
+                a tus necesidades.
+            </p>
+        </div>
+        <div class="feature">
+            <div class="icono"></div>
+            <h2>Contactanos</h2>
+            <p>
+                Ingresa tus datos en el apartado de Contacto y de inmediato un
+                especialista de PixelCraft se contactara contigo
+                para verificar costos y dudas del paquete. 
+            </p>
+        </div>
+        <div class="feature">
+            <div class="icono"></div>
+            <h2>Contrato</h2>
+            <p>
+                Generamos el contrato de manera online
+                y se enviara una copia a tu correo. Y de 
+                inmediato nos pondremos a trabajara en tu proyecto.
+            </p>
+        </div>
+    </section>
+    <!-- --------------- Nuestro equipo-------------- -->
+    <section class="ourTeam">
+        <div class="ourTeamTitle">
+            <h3 class="sectionSubtitle">Conoce</h3>
+            <h2 class="sectionTitle">Nuestro equipo</h2>
+        </div>
+        <div class="teamCards">
+            <div class="teamMember">
+                <h3 class="name">Uriel Fuentes</h3>
+                <div class="image">
+                    <div class="img"></div>
+                </div>
+                <div class="socials">
+                    <div class="social">
+                        <a href="https://www.facebook.com/uriel.fuentes.52012" style="text-decoration:none;">
+                            <i class="fab fa-facebook-f"></i>
+                          </a>
+                    </div>
+                    <div class="social">
+                      <a href="https://www.twitter.com" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </div>
+                    <div class="social">
+                      <a href="https://www.instagram.com/urielpaez01?igsh=MTF5aGh1MzA3ZHVlaw==" style="text-decoration:none;" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                <h4 class="rol">Director</h4>
+            </div>
+            <div class="teamMember">
+                <h3 class="name">Jhonatan Chimal</h3>
+            <div class="image">
+                <div class="img"></div>
+            </div>
+            <div class="socials">
+                <div class="social">
+                    <a href="https://www.facebook.com/jhonatan.chimal" style="text-decoration:none;" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="https://twitter.com/jhonatanchimal" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/jhonatanchimal?igsh=MTF5aGh1MzA3ZHVlaw==" style="text-decoration:none;" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <h4 class="rol">Relaciones Publicas</h4>
+        </div>
+        <div class="teamMember">
+            <h3 class="name">Oscar Zavaleta</h3>
+            <div class="image">
+                <div class="img"></div>
+            </div>
+            <div class="socials">
+                <div class="social">
+                    <a href="https://www.facebook.com/oscar.zavaleta" style="text-decoration:none;" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="https://twitter.com/oscarzavaleta" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/oscarzavaleta?igsh=MTF5aGh1MzA3ZHVlaw==" style="text-decoration:none;" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+                <h4 class="rol">Marketing y Dirección</h4>
+            </div>
+            <div class="teamMember">
+                <h3 class="name">Rodrigo Elox</h3>
+                <div class="image">
+                    <div class="img"></div>
+                </div>
+                <div class="socials">
+                    <div class="social"></div>
+                    <div class="social"></div>
+                    <div class="social"></div>
+                </div>
+                <h4 class="rol">CEO</h4>
+            </div>
+        </div>
+    </section>
+    <!-- ----------- ---- NEWSLETTER -------------- -->
+    <section class="newsletter">
+        <h2>Subscribete a nuestro blog </h2>
+        <p>
+            Subscribete al blog de PixelCraft, donde recibiras notificaciones cuando 
+            se publiquen nuevas noticias y ademas puedas encontrar curso y talleres referente al area de marketing.
+        </p>
+        <div class="subscribeForm">
+            <input type="email" name="email" class="emailInput" placeholder="Correo Electronico">
+            <button>Subscribete</button>
+        </div>
+    </section>
+    <!-- --------------- FOOTER ----------------- -->
+    <footer>
+        <div class="footerColumns">
+            <div class="footerColumn">
+                <a href="index.html"><img class="logo-bajo" src="img/titulo-footer.svg" alt="Page logo"></a>
+            </div>
+            <div class="footerColumn">
+                <h2>Pages</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Nosotros</a></li>
+                    <li><a href="journey.html">Paquetes</a></li>
+                    <li><a href="contact.html">Contactanos</a></li>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <h2>Top Paquetes</h2>
+                <ul>
+                    <li><a href="journey.html#london">Basico</a></li>
+                    <li><a href="journey.html#barcelona">Estandar</a></li>
+                    <li><a href="journey.html#malaga">Premium</a></li>
+                    <li><a href="journey.html#paris">Personalizado</a></li>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <h2> <a href="/contact.html">Contactanos</a></h2>
+                <ul>
+                    <li>+52 2821607245</li>
+                    <li>Chilchotla, puebla</li>
+                    <li>PixelCraft@agencia.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="subfooter">
+            <span>&copy;2024
+                <a href="" target="_blank">PixelCraft</a>
+                <span class="rights">| Todos los derechos reservados.</span></span>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="js/main.js"></script>
+    <!-- Parallax library -->
+    <script src="js/parallax.min.js"></script>
+</body>
+
+</html>

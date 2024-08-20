@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contacto - PixelCraft </title>
+    <!-- Icono -->
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <!-- Meta identificacion de la página -->
+    <meta name="page-identity" content="contact">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles_contacto.css">
+    <link rel="stylesheet" href="css/contact_style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/1e6ab72603.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- --------- HERO ---------- -->
+    <header data-parallax="scroll" data-image-src="img/contact/banner2.jpg" data-speed="0.2">
+        <div class="menu" data-aos="fade-down" data-aos-duration="800">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/Título-completo}_.svg" alt="Page logo">                   
+                </a>
+            </div>
+            
+
+            <nav id="menuContainer">
+                <label id="menu-toggle" class="hamburger menu-toggle">
+                    <input type="checkbox">
+                    <svg viewbox= "0 0 32 32">
+                        <path class="line line-top-bottom"
+                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                        </path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+                <ul class="list-nav">
+                    <li>
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a href="journey.html">Paquetes</a></li>
+                    <li class="nav-item activeMenu"><a href="#">Contact0</a></li>
+                    <li class="nav-button"><a href="./php/login.php"><span>¿Administrador?</span>  <img src="img/icons/mapa.svg"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="headerContent">
+            <h2 class="heroSubtitle" data-aos="fade-right" data-aos-duration="800">Contacto & Informacion</h2>
+            <h1 class="heroTitle" data-aos="fade-right" data-aos-duration="800">¡Contrátanos
+                y caminemos al éxito!.</h1>
+        </div>
+    </header>
+
+    <!-- ---------------- GENERAL CONTACT --------------- -->
+    <section class="generalContact">
+        <!-- ---------------- CONTACT INFO --------------- -->
+        <div class="contactInfo">
+            <div class="title">
+                <h3 class="sectionSubtitle">TODO LO QUE NECESITAS SABER</h3>
+                <h2 class="sectionTitle">Contacto & Informacion</h2>
+            </div>
+            <div class="content">
+                <p>
+                    En <span class="dest">PixelCraft</span> Nos enorgullecemos de estar siempre disponibles para
+                    responder cualquier consulta o pregunta que nuestros <span class="dest">valorados usuarios</span> puedan tener. Nosotros
+                    estamos aqui para lograr lo que ninguna otra<span class="dest">  puede lograr.</span>.
+                </p>
+                <div class="line"></div>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i>+52 2821607245</li>
+                    <li><i class="fa-solid fa-location-dot"></i>Chilchotla, puebla</li>
+                    <li><i class="fa-solid fa-envelope"></i>PixelCraft@agencia.com</li>
+                </ul>
+            </div>
+        </div>
+        <!-- ---------------- CONTACT FORM --------------- -->
+        <div class="contactForm">
+            <div class="title">
+                <h3 class="sectionSubtitle">Enviar un mensaje</h3>
+                <h2 class="sectionTitle">Pongase en contacto</h2>
+            </div>
+            <form id="registrationForm" action="php/conexion.php" method="POST">
+                <input type="text" name="name" id="name" placeholder="Tu nombre" required minlength="3" maxlength="50">
+                <input type="email" name="email" id="email" placeholder="Tu correo" required>
+                <input type="tel" name="phone" id="phone" placeholder="Tu telefono" required pattern="[0-9]{10}">
+                <input type="text" name="address" id="address" placeholder="Tu direccion" required minlength="5" maxlength="100">
+                <textarea name="message" id="message" placeholder="Tu mensaje" required minlength="10" maxlength="500"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            
+            <script>
+            document.getElementById('registrationForm').addEventListener('submit', function(event) {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const address = document.getElementById('address').value;
+                const message = document.getElementById('message').value;
+            
+                const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                const phonePattern = /^[0-9]{10}$/;
+            
+                if (!emailPattern.test(email)) {
+                    alert("Por favor, introduce un correo válido.");
+                    event.preventDefault();
+                    return false;
+                }
+            
+                if (!phonePattern.test(phone)) {
+                    alert("Por favor, introduce un número de teléfono válido.");
+                    event.preventDefault();
+                    return false;
+                }
+            
+                if (name.length < 3 || name.length > 50) {
+                    alert("El nombre debe tener entre 3 y 50 caracteres.");
+                    event.preventDefault();
+                    return false;
+                }
+            
+                if (address.length < 5 || address.length > 100) {
+                    alert("La dirección debe tener entre 5 y 100 caracteres.");
+                    event.preventDefault();
+                    return false;
+                }
+            
+                if (message.length < 10 || message.length > 500) {
+                    alert("El mensaje debe tener entre 10 y 500 caracteres.");
+                    event.preventDefault();
+                    return false;
+                }
+            
+                return true;
+            });
+            </script>
+            
+            
+        </div>
+    </section>
+    <!-- ---------------- WORK WITH US --------------- -->
+    <section class="workWithUs">
+        <div class="title">
+            <h3 class="sectionSubtitle">¿Donde se ubica?</h3>
+            <h2 class="sectionTitle">PixelCraft</h2>
+    </section>
+    <!-- ---------------- BANNER --------------- -->
+    <section class="banner" data-parallax="scroll" data-image-src="img/contact/mapa.png" data-speed="0.2" ></section>
+    <!-- ---------------- FEATURED JOURNEYS --------------- -->
+    <section class="featuredJourneys">
+        <div class="title">
+            <h3 class="sectionSubtitle">Únete al éxito: más de 500 clientes que ya han impulsado su negocio con PixelCraft.</h3>
+            <h2 class="sectionTitle">¡Sé el siguiente!</h2>
+        </div>
+        <div class="journeys">
+            <div class="journey">
+                <a href="img/contact/casamaria.png"><div class="image"></div></a>
+                <span>Casa Maria</span>
+            </div>
+            <div class="journey">
+                <a href="img/contact/ropa.jpg"><div class="image"></div></a>
+                <span>Olympia Sports</span>
+            </div>
+            <div class="journey">
+                <a href="img/contact/tecnologia.jpg"><div class="image"></div></a>
+                <span>Tecnotech</span>
+            </div>
+        </div>
+    </section>
+    <!-- ----------- ---- NEWSLETTER -------------- -->
+    <section class="newsletter">
+        <h2>SUBSCRIBETE A NUESTRO BLOG</h2>
+        <p>
+            Subscribete al blog de PixelCraft, donde recibiras notificaciones cuando se publiquen nuevas noticias y ademas puedas encontrar curso y talleres referente al area de marketing.
+        </p>
+        <div class="subscribeForm">
+            <input type="email" name="email" class="emailInput" placeholder="Correo Electronico">
+            <button>Subscribete</button>
+        </div>
+    </section>
+    <!-- --------------- FOOTER ----------------- -->
+    <footer>
+        <div class="footerColumns">
+            <div class="footerColumn">
+                <a href="index.html"><img src="img/contact/logo.png" alt="Page logo"></a>
+            </div>
+            <div class="footerColumn">
+                <h2>Paginas</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="journey.html">Paquetes</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <h2>Top Paquetes</h2>
+                <ul>
+                    <li><a href="journey.html#london">Basico</a></li>
+                    <li><a href="journey.html#barcelona">Estandar</a></li>
+                    <li><a href="journey.html#malaga">Premium</a></li>
+                    <li><a href="journey.html#paris">Personalizado</a></li>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <h2>Contact0</h2>
+                <ul>
+                    <li>+52 282160724</li>
+                    <li>Chilchotla, puebla</li>
+                    <li>PixelCraft@agencia.es</li>
+                </ul>
+            </div>
+        </div>
+        <div class="subfooter">
+            <span>&copy;2024
+                <a href="https://arielguerrero.es" target="_blank">PixelCraft</a>
+                <span class="rights">| All rights reserved.</span></span>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="js/main.js"></script>
+    <!-- Parallax library -->
+    <script src="js/parallax.min.js"></script>
+</body>
+
+</html>
