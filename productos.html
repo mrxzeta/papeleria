@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Productos de Papelería</title>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header>
       <div class="menu logo-nav">
-        <a href="index.html" class="logo">PETSHOP</a>
+        <a href="index.html" class="logo">PAPELERÍA</a>
         <label class="menu-icon"><span class="fas fa-bars icomin"></span></label>
         <nav class="navigation">
           <ul>
@@ -17,30 +17,29 @@
             <li><a href="productos.html">Productos</a></li>
             <li><a href="contacto.html">Contacto</a></li>
             <li class="search-icon">
-              <input type="search" placeholder="Search">
+              <input type="search" placeholder="Buscar">
               <label class="icon">
                 <span class="fas fa-search"></span>
               </label>
             </li>
-            <li class="car" >
+            <li class="car">
               <svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
               </svg>
-                <div id="carrito" class="dropdown-menu">
-                  <table id="lista-carrito" class="table">
-                      <thead>
-                          <tr>
-                              <th>Imagen</th>
-                              <th>Nombre</th>
-                              <th>Precio</th>
-                              <th></th>
-                          </tr>
-                      </thead>
-                      <tbody></tbody>
-                  </table>
-
-                  <a href="#" id="vaciar-carrito" class="button-vaciar">Vaciar Carrito</a>
-                  <a href="#" id="procesar-pedido" class="button-pedido">Procesar Compra</a>
+              <div id="carrito" class="dropdown-menu">
+                <table id="lista-carrito" class="table">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="#" id="vaciar-carrito" class="button-vaciar">Vaciar Carrito</a>
+                <a href="#" id="procesar-pedido" class="button-pedido">Procesar Compra</a>
               </div>
             </li>
           </ul>
@@ -48,118 +47,301 @@
       </div>
     </header>
 
+    <main>
 
-<main>
-
-        <div class="modal" id="modal">
-          <div class="modal-content">
-            <img src="" alt="" class="modal-img" id="modal-img">
-          </div>
-          <div class="modal-boton" id="modal-boton">X</div>
-        </div>
-
-        <div class="container-productos" id="lista-productos">
-
-          <div class="card">
-            <img src="assets/img/ropa1.jpeg" class="card-img">
-            <h5>Ropa Hello Kitty</h5>
-            <p>SKU: ROP0000074</p>
-            <p>S/.<small class="precio">18</small></p>
-            <a href="#" class="button agregar-carrito" data-id="1">Comprar</a>
-          </div>
-          <div class="card">
-            <img src="assets/img/juguete1.png" class="card-img">
-            <h5>Pelota Soga Nudo Grande Colores</h5>
-            <p>SKU: JUG0000005</p>
-            <p>S/.<small class="precio">14</small></p>
-            <a href="#" class="button agregar-carrito" data-id="2">Comprar</a>
-          </div>
-          <div class="card">
-            <img src="assets/img/alimento1.webp" class="card-img">
-            <h5>Pack Yogy Helado para perros 100% Natural 100g de Barker</h5>
-            <p>SKU: BPY4UND</p>
-            <p>S/.<small class="precio">24</small></p>
-            <a href="#" class="button agregar-carrito" data-id="3">Comprar</a>
-          </div>
-
-          <div class="card">
-            <img src="assets/img/alimento2.webp" class="card-img">
-            <h5>Dingo Dental Mini Bones 7und x70gr</h5>
-            <p>SKU: DDMB7U70GR</p>
-            <p>S/.<small class="precio">26</small></p>
-            <a href="#" class="button agregar-carrito" data-id="4">Comprar</a>
-          </div>
-          <div class="card">
-            <img src="assets/img/juguete3.webp" class="card-img">
-            <h5>Hartz - Duraplay Ball Medium</h5>
-            <p>SKU: HDB04</p>
-            <p>S/.<small class="precio">35</small></p>
-            <a href="#" class="button agregar-carrito" data-id="5">Comprar</a>
-          </div>
-          <div class="card">
-            <img src="assets/img/ropa2.jpeg" class="card-img">
-            <h5>Ropa Avengers</h5>
-            <p>SKU: ROP0000023</p>
-            <p>S/.<small class="precio">21</small></p>
-            <a href="#" class="button agregar-carrito" data-id="6">Comprar</a>
-          </div>
-
-          <div class="card">
-            <img src="assets/img/juguete2.webp" class="card-img">
-            <h5>Animal Planet Juguete P/Mascota Medium</h5>
-            <p>SKU: AP-D794-011</p>
-            <p>S/.<small class="precio">29</small></p>
-            <a href="#" class="button agregar-carrito" data-id="7">Comprar</a>
-          </div>
-          <div class="card">
-            <img src="assets/img/ropa3.webp" class="card-img">
-            <h5>Hoodie Hotdogz Mr. Charlie</h5>
-            <p>SKU: HTD-TSH023-1</p>
-            <p>S/.<small class="precio">90</small></p>
-            <a href="#" class="button agregar-carrito" data-id="8">Comprar</a>
-          </div>
-          <div class="card">
-            <img src="assets/img/alimento3.webp" class="card-img">
-            <h5>Hills PD Metabolic Treats</h5>
-            <p>SKU: HPDMT</p>
-            <p>S/.<small class="precio">45</small></p>
-            <a href="#" class="button agregar-carrito" data-id="9">Comprar</a>
-          </div>
-
-        </div>
-</main>
-  
-
-<footer class="footer-section">
-  <div class="copyright-area">
-      <div class="container-footer">
-          <div class="row-footer">
-              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                  <div class="copyright-text">
-                      <p>Copyright &copy; 2020, todos los derechos reservados <a href="index.html">PETSHOP</a></p>
-                  </div>
-              </div>
-              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                  <div class="footer-menu">
-                      <ul>
-                          <li><a href="nosotros.html">Nosotros</a></li>
-                          <li><a href="productos.html">Productos</a></li>
-                          <li><a href="contacto.html">Contacto</a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
+      <div class="filtros">
+        <label for="categoria">Filtrar por categoría:</label>
+        <select id="categoria" onchange="filtrarPorCategoria()">
+          <option value="todos">Todos</option>
+          <option value="cuadernos">Cuadernos</option>
+          <option value="lapices">Lápices</option>
+          <option value="papel">Papel</option>
+          <option value="accesorios">Accesorios</option>
+        </select>
       </div>
-  </div>
-</footer> 
 
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <img src="" alt="" class="modal-img" id="modal-img">
+        </div>
+        <div class="modal-boton" id="modal-boton">X</div>
+      </div>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script  src="assets/js/scripts.js"></script>
-    <script src="assets/js/carrito.js"></script>
-    <script src="assets/js/pedido.js"></script>
-    <script src="assets/js/compra.js"></script>
-</body>
+      <div class="container-productos" id="lista-productos">
+
+        <!-- Cuadernos -->
+        <div class="card" data-categoria="cuadernos">
+          <img src="assets/img/cuaderno1.jpg" class="card-img">
+          <h5>Cuaderno Rayado 100 Hojas</h5>
+          <p>SKU: CUA000001</p>
+          <p>S/.<small class="precio">12</small></p>
+          <input type="number" class="cantidad" value="1" min="1" max="100">
+          <a href="#" class="button agregar-carrito" data-id="1">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="cuadernos">
+          <img src="assets/img/cuaderno2.jpg" class="card-img">
+          <h5>Cuaderno de Dibujo</h5>
+          <p>SKU: CUA000002</p>
+          <p>S/.<small class="precio">15</small></p>
+          <a href="#" class="button agregar-carrito" data-id="2">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="cuadernos">
+          <img src="assets/img/cuaderno3.jpg" class="card-img">
+          <h5>Cuaderno Universitario 200 Hojas</h5>
+          <p>SKU: CUA000003</p>
+          <p>S/.<small class="precio">20</small></p>
+          <a href="#" class="button agregar-carrito" data-id="3">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="cuadernos">
+          <img src="assets/img/cuaderno4.jpg" class="card-img">
+          <h5>Cuaderno Espiral A5</h5>
+          <p>SKU: CUA000004</p>
+          <p>S/.<small class="precio">10</small></p>
+          <a href="#" class="button agregar-carrito" data-id="4">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="cuadernos">
+          <img src="assets/img/cuaderno5.jpg" class="card-img">
+          <h5>Cuaderno de Bocetos</h5>
+          <p>SKU: CUA000005</p>
+          <p>S/.<small class="precio">18</small></p>
+          <a href="#" class="button agregar-carrito" data-id="5">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="cuadernos">
+          <img src="assets/img/cuaderno6.jpg" class="card-img">
+          <h5>Cuaderno de Composición</h5>
+          <p>SKU: CUA000006</p>
+          <p>S/.<small class="precio">14</small></p>
+          <a href="#" class="button agregar-carrito" data-id="6">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="cuadernos">
+          <img src="assets/img/cuaderno7.jpg" class="card-img">
+          <h5>Cuaderno Cuadriculado</h5>
+          <p>SKU: CUA000007</p>
+          <p>S/.<small class="precio">13</small></p>
+          <a href="#" class="button agregar-carrito" data-id="7">Comprar</a>
+        </div>
+
+        <!-- Lápices -->
+        <div class="card" data-categoria="lapices">
+          <img src="assets/img/lapiz1.jpg" class="card-img">
+          <h5>Lápiz HB #2</h5>
+          <p>SKU: LAP000001</p>
+          <p>S/.<small class="precio">2</small></p>
+          <a href="#" class="button agregar-carrito" data-id="8">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="lapices">
+          <img src="assets/img/lapiz2.jpg" class="card-img">
+          <h5>Lápiz de Colores 12 Unidades</h5>
+          <p>SKU: LAP000002</p>
+          <p>S/.<small class="precio">10</small></p>
+          <a href="#" class="button agregar-carrito" data-id="9">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="lapices">
+          <img src="assets/img/lapiz3.jpg" class="card-img">
+          <h5>Lápiz Mecánico</h5>
+          <p>SKU: LAP000003</p>
+          <p>S/.<small class="precio">6</small></p>
+          <a href="#" class="button agregar-carrito" data-id="10">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="lapices">
+          <img src="assets/img/lapiz4.jpg" class="card-img">
+          <h5>Lápiz de Dibujo 6B</h5>
+          <p>SKU: LAP000004</p>
+          <p>S/.<small class="precio">4</small></p>
+          <a href="#" class="button agregar-carrito" data-id="11">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="lapices">
+          <img src="assets/img/lapiz5.jpg" class="card-img">
+          <h5>Lápiz de Grafito 2H</h5>
+          <p>SKU: LAP000005</p>
+          <p>S/.<small class="precio">3</small></p>
+          <a href="#" class="button agregar-carrito" data-id="12">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="lapices">
+          <img src="assets/img/lapiz6.jpg" class="card-img">
+          <h5>Lápiz Acuarelable</h5>
+          <p>SKU: LAP000006</p>
+          <p>S/.<small class="precio">8</small></p>
+          <a href="#" class="button agregar-carrito" data-id="13">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="lapices">
+          <img src="assets/img/lapiz7.jpg" class="card-img">
+          <h5>Lápiz de Carboncillo</h5>
+          <p>SKU: LAP000007</p>
+          <p>S/.<small class="precio">7</small></p>
+          <a href="#" class="button agregar-carrito" data-id="14">Comprar</a>
+        </div>
+
+        <!-- Papel -->
+        <div class="card" data-categoria="papel">
+          <img src="assets/img/papel1.jpg" class="card-img">
+          <h5>Resma de Papel Bond A4</h5>
+          <p>SKU: PAP000001</p>
+          <p>S/.<small class="precio">18</small></p>
+          <a href="#" class="button agregar-carrito" data-id="15">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="papel">
+          <img src="assets/img/papel2.jpg" class="card-img">
+          <h5>Bloc de Papel Millimetrado</h5>
+          <p>SKU: PAP000002</p>
+          <p>S/.<small class="precio">12</small></p>
+          <a href="#" class="button agregar-carrito" data-id="16">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="papel">
+          <img src="assets/img/papel3.jpg" class="card-img">
+          <h5>Papel Fotográfico A3</h5>
+          <p>SKU: PAP000003</p>
+          <p>S/.<small class="precio">25</small></p>
+          <a href="#" class="button agregar-carrito" data-id="17">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="papel">
+          <img src="assets/img/papel4.jpg" class="card-img">
+          <h5>Papel Kraft</h5>
+          <p>SKU: PAP000004</p>
+          <p>S/.<small class="precio">10</small></p>
+          <a href="#" class="button agregar-carrito" data-id="18">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="papel">
+          <img src="assets/img/papel5.jpg" class="card-img">
+          <h5>Cartulina Blanca A4</h5>
+          <p>SKU: PAP000005</p>
+          <p>S/.<small class="precio">15</small></p>
+          <a href="#" class="button agregar-carrito" data-id="19">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="papel">
+          <img src="assets/img/papel6.jpg" class="card-img">
+          <h5>Papel Pergamino</h5>
+          <p>SKU: PAP000006</p>
+          <p>S/.<small class="precio">22</small></p>
+          <a href="#" class="button agregar-carrito" data-id="20">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="papel">
+          <img src="assets/img/papel7.jpg" class="card-img">
+          <h5>Papel Crepé</h5>
+          <p>SKU: PAP000007</p>
+          <p>S/.<small class="precio">5</small></p>
+          <a href="#" class="button agregar-carrito" data-id="21">Comprar</a>
+        </div>
+
+        <!-- Accesorios -->
+        <div class="card" data-categoria="accesorios">
+          <img src="assets/img/accesorio1.jpg" class="card-img">
+          <h5>Regla de 30cm</h5>
+          <p>SKU: ACC000001</p>
+          <p>S/.<small class="precio">3</small></p>
+          <a href="#" class="button agregar-carrito" data-id="22">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="accesorios">
+          <img src="assets/img/accesorio2.jpg" class="card-img">
+          <h5>Goma de Borrar</h5>
+          <p>SKU: ACC000002</p>
+          <p>S/.<small class="precio">1</small></p>
+          <a href="#" class="button agregar-carrito" data-id="23">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="accesorios">
+          <img src="assets/img/accesorio3.jpg" class="card-img">
+          <h5>Corrector Líquido</h5>
+          <p>SKU: ACC000003</p>
+          <p>S/.<small class="precio">5</small></p>
+          <a href="#" class="button agregar-carrito" data-id="24">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="accesorios">
+          <img src="assets/img/accesorio4.jpg" class="card-img">
+          <h5>Tijeras de Oficina</h5>
+          <p>SKU: ACC000004</p>
+          <p>S/.<small class="precio">7</small></p>
+          <a href="#" class="button agregar-carrito" data-id="25">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="accesorios">
+          <img src="assets/img/accesorio5.jpg" class="card-img">
+          <h5>Cinta Adhesiva Transparente</h5>
+          <p>SKU: ACC000005</p>
+          <p>S/.<small class="precio">4</small></p>
+          <a href="#" class="button agregar-carrito" data-id="26">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="accesorios">
+          <img src="assets/img/accesorio6.jpg" class="card-img">
+          <h5>Engrapadora</h5>
+          <p>SKU: ACC000006</p>
+          <p>S/.<small class="precio">15</small></p>
+          <a href="#" class="button agregar-carrito" data-id="27">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="accesorios">
+          <img src="assets/img/accesorio7.jpg" class="card-img">
+          <h5>Perforadora de Papel</h5>
+          <p>SKU: ACC000007</p>
+          <p>S/.<small class="precio">12</small></p>
+          <a href="#" class="button agregar-carrito" data-id="28">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="accesorios">
+          <img src="assets/img/accesorio8.jpg" class="card-img">
+          <h5>Sacapuntas</h5>
+          <p>SKU: ACC000008</p>
+          <p>S/.<small class="precio">2</small></p>
+          <a href="#" class="button agregar-carrito" data-id="29">Comprar</a>
+        </div>
+
+        <div class="card" data-categoria="accesorios">
+          <img src="assets/img/accesorio9.jpg" class="card-img">
+          <h5>Broche Binder</h5>
+          <p>SKU: ACC000009</p>
+          <p>S/.<small class="precio">6</small></p>
+          <a href="#" class="button agregar-carrito" data-id="30">Comprar</a>
+        </div>
+
+      </div>
+      
+    </main>
+
+    <script>
+      function filtrarPorCategoria() {
+        const categoria = document.getElementById('categoria').value;
+        const productos = document.querySelectorAll('.card');
+        
+        productos.forEach(producto => {
+          if (categoria === 'todos' || producto.getAttribute('data-categoria') === categoria) {
+            producto.style.display = 'block';
+          } else {
+            producto.style.display = 'none';
+          }
+        });
+      }
+      
+      
+    </script>
+  </body>
+  
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script  src="assets/js/scripts.js"></script>
+  <script src="assets/js/carrito.js"></script>
+  <script src="assets/js/pedido.js"></script>
+  <script src="assets/js/compra.js"></script>
+  
 </html>
