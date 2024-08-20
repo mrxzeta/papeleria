@@ -1,15 +1,7 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "papeleria";
+include 'conexion.php';
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("La conexión falló: " . $conn->connect_error);
-}
 
 
 if(isset($_POST["btningresar"])){
