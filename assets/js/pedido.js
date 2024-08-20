@@ -1,3 +1,4 @@
+// Inicialización de la clase Carrito
 const carro = new Carrito();
 const carrito = document.getElementById('carrito');
 const productos = document.getElementById('lista-productos');
@@ -7,10 +8,19 @@ const procesarPedidoBtn = document.getElementById('procesar-pedido');
 
 cargarEventos();
 
-function cargarEventos(){
-    productos.addEventListener('click', (e)=>{carro.comprarProducto(e)});
-    carrito.addEventListener('click', (e)=>{carro.eliminarProducto(e)});
-    vaciarCarritoBtn.addEventListener('click', (e)=>{carro.vaciarCarrito(e)});
-    document.addEventListener('DOMContentLoaded', carro.leerLocalStorage());
-    procesarPedidoBtn.addEventListener('click', (e)=>{carro.procesarPedido(e)});
+function cargarEventos() {
+    // Agregar producto al carrito
+    productos.addEventListener('click', (e) => carro.comprarProducto(e));
+    
+    // Eliminar producto del carrito
+    carrito.addEventListener('click', (e) => carro.eliminarProducto(e));
+    
+    // Vaciar carrito
+    vaciarCarritoBtn.addEventListener('click', (e) => carro.vaciarCarrito(e));
+    
+    // Leer productos del local storage al cargar la página
+    document.addEventListener('DOMContentLoaded', () => carro.leerLocalStorage());
+    
+    // Procesar el pedido
+    procesarPedidoBtn.addEventListener('click', (e) => carro.procesarPedido(e));
 }
